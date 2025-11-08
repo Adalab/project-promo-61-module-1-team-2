@@ -5,7 +5,7 @@
 	"type": "module",
 	"devDependencies": {
 		"@vituum/vite-plugin-concat": "^1.1.1",
-		"sass": "^1.83.4",
+		"sass": "^1.93.3",
 		"sharp": "^0.34.4",
 		"vite": "^7.1.9",
 		"vite-plugin-html-inject": "^1.1.2",

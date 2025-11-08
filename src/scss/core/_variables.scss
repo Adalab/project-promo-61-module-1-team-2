@@ -110,7 +110,6 @@ body {
 
 h1, .heading-xl {
   font-family: $font-family-heading;
-  @include clamp(2.25rem, 5vw, $font-size-3xl);
   font-weight: $font-weight-bold;
   line-height: $line-height-tight;
   color: $text-primary;
@@ -142,13 +141,13 @@ p { color: $text-secondary; }
 
 .muted { color: $text-muted; }
 .text-accent { color: $color-accent-pink; }
-.text-gradient { @include gradient-text(); }
+
 
 /* Links */
 a {
   color: $color-brand-600;
   text-decoration: none;
   &:hover { color: $color-brand-700; }
-  &:focus-visible { @include focus-ring(); }
+
 }
 

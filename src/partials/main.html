@@ -1,40 +1,43 @@
 <main class="page__main">
-  <h2>Este es el starter kit de Adalab</h2>
-  <p>Lo usamos para aprender:</p>
-  <ul class="main__list">
-    <li>Sass</li>
-    <li>HTML partials</li>
-    <li>Gulp</li>
-    <li>y muchas cosas más</li>
-  </ul>
-  <p>Si quieres saber cúales son las rutas correctas para:</p>
-  <ul class="main__list">
-    <li>
-      una <code class="code">&lt;img /&gt;</code> mira el fichero
-      <code class="code">./src/html/partials/header.html</code>.
-    </li>
-    <li>
-      y para un <code class="code">background-image</code> mira el fichero
-      <code class="code">./src/html/scss/layout/_page.scss</code>.
-    </li>
-  </ul>
-  <p>
-    Si quieres saber cómo usar un partial HTML dentro de otro partial, busca en la carperta
-    <code class="code">./src/html/index.html</code> y
-    <code class="code">./src/html/partials/main.html</code>, y verás cómo estamos creando estos
-    enlaces:
-  </p>
-  <ul class="main__list">
-    <li>
-      <load
-        src="/partials/link.html"
-        aClass="link__adalab"
-        text="Adalab"
-        url="https://adalab.es"
-      />
-    </li>
-    <li>
-      <load src="/partials/link.html" text="Más info del starter kit" url="./more-info.html" />
-    </li>
-  </ul>
+ 
+ 
+ 
+ 
+  <!-- Travel Point -->
+  <section class="travel-point">
+      <div class="container tp__inner">
+        <!-- Lado visual -->
+        <div class="tp__visual">
+          <img class="tp__img" src="assets/tu-imagen.png" alt="Viajera con mochila y maleta" />
+          <!-- Badge flotante -->
+          <div class="tp__badge" aria-label="Discounted Price">
+            <span class="tp__badge-icon" aria-hidden="true">🏷️</span>
+            <span>Discounted Price</span>
+          </div>
+
+          <!-- Burbujas decorativas (opcionales) -->
+          <span class="tp__bubble tp__bubble--sm"></span>
+          <span class="tp__bubble tp__bubble--md"></span>
+        </div>
+
+        <!-- Lado contenido -->
+        <div class="tp__content">
+          <span class="eyebrow">TRAVEL POINT</span>
+          <h2 class="heading-lg tp__title">
+            Lorem ipsum, catt<br/> oiyhgr hklop
+          </h2>
+
+          <div class="tp__kpis">
+            <div class="kpi-card">
+              <div class="kpi-card__value">500+</div>
+              <div class="kpi-card__label">Fiestas</div>
+            </div>
+            <div class="kpi-card">
+              <div class="kpi-card__value">100</div>
+              <div class="kpi-card__label">Hoteles de lujo</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 </main>

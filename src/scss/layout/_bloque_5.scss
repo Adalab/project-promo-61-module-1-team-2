@@ -24,6 +24,8 @@
     outline: none;
     border: 0;
     height: 80px;
+    margin-left: 64px;
+    margin-right: 64px;
  
 }
 
@@ -31,11 +33,11 @@ input[type=text] {
   border: none;
   padding: 30px;
   border-radius: 50px;
-  font-size: medium;
-  margin-left: 64px;
+  font-size: large;
+  margin-left: 32px;
   margin-right: 64px;
   font-weight: bold;
-  color: black;
+
 
 
 }
@@ -51,6 +53,9 @@ input[type=submit] {
   margin-right: 168px;
   font-size: 23px;
   font-weight: bold;
+}
 
-
+.form_map--image{
+    margin: -15px ;
+    margin-bottom: 214px;
 }

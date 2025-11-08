@@ -1,10 +1,51 @@
-@use '../core/variables' as vars;
+@use "../core/variables" as vars;
 
-.page__footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100vw;
-    padding: 1rem;
-    color: vars.$color-secondary;
-}
+.footer {
+  width: 100vw;
+  min-width: 430px;
+  height: auto; /*188px*/
+  margin-left: 2rem;
+
+  &__title {
+    display: inline-flex;
+    margin-top: 32px;
+    gap: 1rem;
+    justify-content: flex-start;
+    &-Ada-travel {
+      width: 116px;
+      height: 40px;
+      font-family: Roboto;
+      font-size: 1.5rem; /*24*/
+      font-weight: 900;
+      line-height: 2.5rem; /*40*/
+      text-align: left;
+      color: #191825;
+    }
+  }
+
+  &__brands {
+    margin-top: 1.5rem;
+    display: flex;
+    gap: 2rem;
+
+    .icon {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      background-color: #5d50c6;
+      color: white;
+    }
+  }
+  &__others {
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    align-items: start;
+  }
+
+  }
+

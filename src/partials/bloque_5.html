@@ -1,22 +1,31 @@
 <!--CONTACT MOBILE-->
 
-<form action="/signup" method="get">
+<section class="form"> 
 
-    <h3>Suscríbete</h3>
+    <form action="/signup" method="get">
 
-    <label for="email">Email</label>
-    <input type="text" name="email">
+        <h3 class="form__h3">SUSCRIBETE</h3>
 
-    <label for="Name">Nombre</label>
-    <input type="text" name="Name">
+        <div class="form__card"> 
 
-    <label for="Comment">Comentario</label>
-    <input type="text" name="Comment">
+        <div class="form__card--email">
+            <input placeholder= "Email" type="text" name="email">
+        </div>
 
-    <input type="submit" value="Enviar">
+        <div class="form__card--name">
+            <input placeholder="Nombre" type="text" name="Name">
+        </div>
+ 
+        <div class="form__card--comment">
+            <input placeholder="Comentario" type="text" name="Comment">
+        </div>
 
-</form>
+        <div class="form__bottom">
+            <input type="submit" value="Enviar">
+        </div>
 
+      </div>
 
-</body>
-</html>
+    </form>
+
+</section>

@@ -1,0 +1,56 @@
+.form {
+    background-color: #FFFFC5;
+    width: 430px;
+    height: 819px;
+
+}
+
+.form__h3 {
+    color:#f85e9f;
+    padding: 128px 42px  42.8px;
+    font-size: 23px;
+    font-style: normal;
+    
+  
+    
+}
+
+
+.form__card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 42.8px;
+    outline: none;
+    border: 0;
+    height: 80px;
+ 
+}
+
+input[type=text] {
+  border: none;
+  padding: 30px;
+  border-radius: 50px;
+  font-size: medium;
+  margin-left: 64px;
+  margin-right: 64px;
+  font-weight: bold;
+  color: black;
+
+
+}
+
+input[type=submit] {
+  background-color: #5d50c6;
+  color: white;
+  border: none;
+  padding: 32px 64px;
+  border-radius: 32px;
+  margin-bottom: 128px;
+  margin-left: 64px;
+  margin-right: 168px;
+  font-size: 23px;
+  font-weight: bold;
+
+
+}

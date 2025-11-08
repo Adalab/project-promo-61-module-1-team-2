@@ -1,2 +1,51 @@
 
+.block1 {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 430px;
+    height: 613.4px;
+    padding: 16px;
+   
+}
 
+.block1__card {
+    margin-top: 1rem;
+    width: 398px;
+    
+}
+    
+.block1__card-img {
+  margin-bottom: 2rem;
+  
+}  
+
+.block1__box1--h1 {
+    color: black;
+    text-align: center;
+    font-size: large;
+
+}
+
+.block1__box1--h1 span {
+    color: #f85e9f;
+    text-align: center;
+    
+}
+
+.block1__box1--button {
+    background-color:  #5d50c6;
+    color: white;
+    width: 398px;
+    height: 65px;  
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    justify-content: center;
+    border-radius: 100px;
+    margin-top: 2rem;
+  
+    
+    
+} 

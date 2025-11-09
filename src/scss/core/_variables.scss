@@ -1,4 +1,10 @@
 
+// colors
+$color-bg: #f3f4f5;
+$color-secondary: #999;
+
+
+
 /* Colors – Brand & Accents */
 $color-brand-500: #A93AFF; // violeta principal
 $color-brand-600: #7A2AFF; // hover
@@ -29,7 +35,6 @@ $text-secondary: rgba(25, 24, 37, 0.5);
 $text-muted:     #9CA3AF;
 $text-on-brand:  $color-neutral-0;
 
-
 /* States */
 $color-success: #32D583;
 $color-warning: #FDB022;
@@ -44,7 +49,6 @@ $gradient-badge:   linear-gradient(120deg, #FFAE63 0%, #FFD45E 100%);
 $font-family-heading: 'Roboto', 'Helvetica Neue', Arial, sans-serif;
 $font-family-body:    'Inter', 'Helvetica Neue', Arial, sans-serif;
 
-
 $font-size-xs:  0.75rem;   // 12px
 $font-size-sm:  0.875rem;  // 14px
 $font-size-md:  1rem;      // 16px
@@ -52,6 +56,7 @@ $font-size-lg:  1.125rem;  // 18px
 $font-size-lg2: 1.25rem;   // 20px
 $font-size-xl:  1.4375rem; // 23px (card title)
 $font-size-xl2: 1.5rem;    // 24px
+$font-size-xl:  1.4375rem; // 23px (card title)
 $font-size-2xl: 2rem;      // 32px
 $font-size-3xl: 3rem;      // 48px (hero)
 
@@ -149,3 +154,9 @@ p { color: $text-secondary; }
 
 
 /* Links */
+a {
+  color: $color-brand-600;
+  text-decoration: none;
+  &:hover { color: $color-brand-700; }
+
+}

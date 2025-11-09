@@ -1,10 +1,115 @@
-@use '../core/variables' as vars;
+@use "../core/variables" as vars;
 
-.page__footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100vw;
-    padding: 1rem;
-    color: vars.$color-secondary;
+.footer {
+  width: 100vw;
+  min-width: 320px;
+  height: 11.75rem; /*188px11.75rem*/
+  margin-left: 2rem;
+  margin-top: 4rem;
+
+  &__title {
+    display: inline-flex;
+    gap: 1rem;
+    justify-content: flex-start;
+    &-Ada-travel {
+      width: 116px;
+      height: 40px;
+      font-family: vars.$font-family-heading;
+      font-size: vars.$font-size-xl2; /*24*/
+      font-weight: vars.$font-weight-bold-footer;
+      line-height: 2.5rem; /*40*/
+      text-align: left;
+      color: vars.$text-primary;
+    }
+  }
+
+  &__brands {
+    margin-top: 1.5rem;
+    display: flex;
+    gap: 2rem;
+
+    .icon {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      background-color: vars.$color-brand-700;
+      color: vars.$color-neutral-0;
+    }
+  }
+  &__menu {
+    &-list {
+      margin-top: 2rem;
+      display: flex;
+      flex-direction: column;
+      list-style: none;
+      gap: 1rem;
+      font-size: vars.$font-size-lg;
+      font-family: vars.$font-family-heading;
+      color: vars.$text-secondary;
+
+      &--title {
+        font-weight: vars.$font-weight-bold-footer;
+        color: vars.$text-primary;
+        font-size: vars.$font-size-xl;
+      }
+      a {
+        text-decoration: none;
+        color: inherit;
+      }
+    }
+  }
+  &__others {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    padding-right: 8rem;
+
+    &--logo {
+      width: 100px;
+      height: auto;
+    }
+
+    .icon-copyright {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 15px;
+      height: auto;
+      border-radius: 50%;
+      background-color: #b8b8b9;
+      color: #54575a;
+      margin-bottom: 1rem;
+    }
+  }
+}
+
+@media all and (min-width: 768px) {
+  .footer {
+    &__contain {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+    &__menu {
+      padding-right: 8rem;
+      margin-top: 0;
+
+      &-list {
+        gap: 2rem;
+        margin-top: 0;
+
+        &--title {
+          font-weight: vars.$font-weight-bold-footer;
+          color: vars.$text-primary;
+          font-size: vars.$font-size-xl;
+        }
+      }
+    }
+  }
 }

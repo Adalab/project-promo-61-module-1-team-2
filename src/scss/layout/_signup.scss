@@ -1,0 +1,106 @@
+.form {
+    background-color: #FFFFC5;
+    width: 27rem;
+    height: 51rem;
+
+
+}
+
+.form__h3 {
+    color:#f85e9f;
+    padding: 8rem 3rem 3rem;
+    font-size: 1.4rem;
+    font-style: normal;
+    
+  
+    
+}
+
+
+.form__card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.7rem;
+    outline: none;
+    border: 0;
+    height: 5rem;
+    margin-left: 4rem;
+    margin-right: 4rem;
+ 
+}
+
+/*TEXT INSIDE FORM*/
+
+input[type=text] {
+  border: none;
+  padding: 1.9rem;
+  border-radius: 3rem;
+  font-size: large;
+  margin-left: 2rem;
+  margin-right: 4rem;
+  font-weight: bold;
+
+
+
+}
+/*BUTTON*/
+
+input[type=submit] {
+  background-color: #5d50c6;
+  color: white;
+  border: none;
+  padding: 2rem 4rem;
+  border-radius: 2rem;
+  margin-bottom: 8rem;
+  margin-left: 4rem;
+  margin-right: 10.5rem;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.form_map--image{
+    margin: -1.5rem ;
+    margin-bottom: 13.3rem;
+ 
+    
+}
+
+@media screen and (min-width: 1200px) {
+  /* Desktop */
+
+  input[type=text] {
+    width: 49rem ;
+    height: 5.9rem;
+  }
+
+
+  .form {
+    background-color: #FFFFC5;
+    width: 55.9rem;
+    height: 51rem;
+  }
+
+ 
+}
+
+
+
+
+
+
+@media screen and (max-width: 1200px) {
+  /* Tablet */
+
+
+}
+
+
+
+@media screen and (min-width: 768px) {
+  /* Tablet */
+
+
+
+
+}

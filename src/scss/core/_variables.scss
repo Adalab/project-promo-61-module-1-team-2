@@ -1,9 +1,18 @@
 
+// colors
+$color-bg: #f3f4f5;
+$color-secondary: #999;
+
+
+
+
 /* Colors – Brand & Accents */
 $color-brand-500: #A93AFF; // violeta principal
 $color-brand-600: #7A2AFF; // hover
 $color-brand-700: #5F1FDB; // active
-$color-bg: #F9F7FF;
+
+
+
 
 $color-accent-pink:   #FF81D0;
 $color-accent-orange: #FFAE63;
@@ -30,6 +39,9 @@ $text-secondary: rgba(25, 24, 37, 0.5);
 $text-muted:     #9CA3AF;
 $text-on-brand:  $color-neutral-0;
 
+$text-on-subtitle-eyebrow: #f85e9f;
+
+
 /* States */
 $color-success: #32D583;
 $color-warning: #FDB022;
@@ -48,6 +60,11 @@ $font-size-xs:  0.75rem;   // 12px
 $font-size-sm:  0.875rem;  // 14px
 $font-size-md:  1rem;      // 16px
 $font-size-lg:  1.125rem;  // 18px
+
+$font-size-lg2: 1.25rem;   // 20px
+$font-size-xl:  1.4375rem; // 23px (card title)
+$font-size-xl2: 1.5rem;    // 24px
+
 $font-size-xl:  1.4375rem; // 23px (card title)
 $font-size-2xl: 2rem;      // 32px
 $font-size-3xl: 3rem;      // 48px (hero)
@@ -58,6 +75,7 @@ $font-weight-semibold:600;
 $font-weight-bold:    700;
 
 $line-height-tight:   1.1;
+
 $line-height-normal:  1.4;
 $line-height-relaxed: 1.6;
 $line-height-card:    1.725rem; // 27.6px (23px title)
@@ -106,8 +124,6 @@ body {
   font-weight: $font-weight-regular;
   line-height: $line-height-relaxed;
   color: $text-primary;
-  background: $color-neutral-0;
-  
 }
 
 h1, .heading-xl {

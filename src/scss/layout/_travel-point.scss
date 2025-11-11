@@ -1,0 +1,125 @@
+@use '../core/variables' as *;
+
+/* ===== Travel Point (hero lateral con imagen + KPIs) ===== */
+.travel-point {
+  padding-block: $space-12;
+
+  .tp__inner {
+    display: grid;
+    align-items: center;
+    gap: $space-8;
+
+    @media (min-width: $bp-lg) {
+      grid-template-columns: 1.2fr 1fr;
+    }
+  }
+
+  /* ---------- Lado visual ---------- */
+  .tp__visual {
+    position: relative;
+    min-height: 22rem;
+
+   
+  
+  }
+
+  .tp__img {
+    position: relative;
+    z-index: 1;
+    max-width: 640px;
+    width: 92%;
+    height: auto;
+    display: block;
+    margin-left: 0;
+    margin-bottom: -1.25rem;
+    filter: drop-shadow(0 12px 24px rgba(0,0,0,.12));
+  }
+
+  /* Badge flotante */
+  .tp__badge { display: none; }
+
+  .tp__badge-icon {
+    display: grid;
+    place-items: center;
+    width: 2rem; height: 2rem;
+    border-radius: $radius-full;
+    background: $gradient-badge;
+    color: $color-neutral-0;
+    font-size: 1rem;
+    box-shadow: $shadow-sm;
+  }
+
+
+  .tp__bubble {
+    position: absolute;
+    z-index: 0;
+    border-radius: $radius-full;
+    filter: blur(.2px);
+
+    &--sm { width: .8rem; height: .8rem; left: 12%; top: 8%; background: $color-accent-pink; }
+    &--md { width: 2.6rem; height: 2.6rem; left: 55%; top: -2%; background: $color-accent-purple; opacity: .85; }
+  }
+
+  /* ---------- Lado contenido ---------- */
+  .tp__content {
+    padding-right: 20%;
+    .eyebrow {
+      font-size: $font-size-sm;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: $color-brand-500;
+      margin-bottom: $space-2;
+      display: inline-block;
+    }
+    .tp__title {
+      font-family: $font-family-heading;
+      font-size: clamp(2rem, 3.2vw, 2.75rem);
+      font-weight: $font-weight-bold;
+      line-height: $line-height-tight;
+      color: $text-primary;
+      margin: 0 0 $space-6 0;
+    }
+  }
+
+  /* KPIs */
+  .tp__kpis {
+    display: grid;
+    gap: $space-6;
+    grid-template-columns: 1fr 1fr;
+
+    @media (max-width: $bp-sm) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .kpi-card {
+    background: $color-neutral-0;
+    border: 1px solid $color-neutral-200;
+    border-radius: $radius-xl;
+    padding: $space-6;
+    box-shadow: $shadow-sm;
+    text-align: center;
+  }
+  .kpi-card__value {
+    font-family: $font-family-heading;
+    font-weight: $font-weight-bold;
+    font-size: $font-size-2xl;
+    color: $color-accent-orange;
+    margin-bottom: $space-2;
+  }
+  .kpi-card__label {
+    font-size: $font-size-sm;
+    color: $text-secondary;
+  }
+
+  @media screen and (max-width: $bp-sm) {
+    .tp__content {
+      padding: $space-4;
+    }
+
+    .heading-lg.tp__title{
+      font-size: $font-size-2xl;
+    }
+    
+  }
+}   

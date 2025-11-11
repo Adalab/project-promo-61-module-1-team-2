@@ -1,6 +1,155 @@
-// fonts
-$font-main: 'Roboto', sans-serif;
 
-// colors
-$color-bg: #f3f4f5;
-$color-secondary: #999;
+/* Colors – Brand & Accents */
+$color-brand-500: #A93AFF; // violeta principal
+$color-brand-600: #7A2AFF; // hover
+$color-brand-700: #5F1FDB; // active
+$color-bg: #F9F7FF;
+
+$color-accent-pink:   #FF81D0;
+$color-accent-orange: #FFAE63;
+$color-accent-yellow: #FFD45E;
+$color-accent-purple: #B17EFF;
+
+/* Neutrals */
+$color-neutral-0:   #FFFFFF;
+$color-neutral-25:  #FCFCFD;
+$color-neutral-50:  #F8F8FA;
+$color-neutral-100: #F3F4F6;
+$color-neutral-200: #E6E8EC;
+$color-neutral-300: #DADADA;
+$color-neutral-400: #BDBDBD;
+$color-neutral-500: #949494;
+$color-neutral-600: #757575;
+$color-neutral-700: #4B4B4B;
+$color-neutral-800: #222222;
+$color-neutral-900: #0A0A0A;
+
+/* Text semantic */
+$text-primary:   #191825;
+$text-secondary: rgba(25, 24, 37, 0.5);
+$text-muted:     #9CA3AF;
+$text-on-brand:  $color-neutral-0;
+
+/* States */
+$color-success: #32D583;
+$color-warning: #FDB022;
+$color-error:   #F04438;
+
+/* Gradients */
+$gradient-brand:   linear-gradient(90deg, #A93AFF 0%, #FF81D0 100%);
+$gradient-hero-bg: linear-gradient(180deg, #FFFFFF 0%, #F8F7FC 100%);
+$gradient-badge:   linear-gradient(120deg, #FFAE63 0%, #FFD45E 100%);
+
+/* Typography (rem) */
+$font-family-heading: 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+$font-family-body:    'Inter', 'Helvetica Neue', Arial, sans-serif;
+
+$font-size-xs:  0.75rem;   // 12px
+$font-size-sm:  0.875rem;  // 14px
+$font-size-md:  1rem;      // 16px
+$font-size-lg:  1.125rem;  // 18px
+$font-size-xl:  1.4375rem; // 23px (card title)
+$font-size-2xl: 2rem;      // 32px
+$font-size-3xl: 3rem;      // 48px (hero)
+
+$font-weight-regular: 400;
+$font-weight-medium:  500;
+$font-weight-semibold:600;
+$font-weight-bold:    700;
+
+$line-height-tight:   1.1;
+$line-height-normal:  1.4;
+$line-height-relaxed: 1.6;
+$line-height-card:    1.725rem; // 27.6px (23px title)
+
+/* Spacing (8pt-ish) */
+$space-1:  0.25rem; // 4px
+$space-2:  0.5rem;  // 8px
+$space-3:  0.75rem; // 12px
+$space-4:  1rem;    // 16px
+$space-5:  1.25rem; // 20px
+$space-6:  1.5rem;  // 24px
+$space-8:  2rem;    // 32px
+$space-10: 2.5rem;  // 40px
+$space-12: 3rem;    // 48px
+$space-16: 4rem;    // 64px
+
+/* Radius */
+$radius-sm: 0.375rem; // 6px
+$radius-md: 0.75rem;  // 12px
+$radius-lg: 1.25rem;  // 20px
+$radius-xl: 2rem;     // 32px
+$radius-full: 9999px;
+
+/* Shadows */
+$shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.05);
+$shadow-md: 0 4px 16px rgba(0, 0, 0, 0.08);
+$shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.12);
+
+/* Layout */
+$container-max: 1200px;
+
+/* Breakpoints */
+$bp-xs: 360px;
+$bp-sm: 640px;
+$bp-md: 768px;
+$bp-lg: 1024px;
+$bp-xl: 1280px;
+
+/* Tipografías */
+
+html { font-size: 16px; }
+
+body {
+  font-family: $font-family-body;
+  font-size: $font-size-md;
+  font-weight: $font-weight-regular;
+  line-height: $line-height-relaxed;
+  color: $text-primary;
+  background: $color-neutral-0;
+  
+}
+
+h1, .heading-xl {
+  font-family: $font-family-heading;
+  font-weight: $font-weight-bold;
+  line-height: $line-height-tight;
+  color: $text-primary;
+}
+
+h2, .heading-lg {
+  font-family: $font-family-heading;
+  font-size: $font-size-2xl;
+  font-weight: $font-weight-semibold;
+  line-height: $line-height-normal;
+  color: $text-primary;
+}
+
+h3, .heading-md {
+  font-family: $font-family-heading;
+  font-size: $font-size-xl;
+  font-weight: $font-weight-bold;
+  line-height: $line-height-normal;
+}
+
+.subtitle, .eyebrow {
+  font-size: $font-size-sm;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: $color-brand-500;
+}
+
+p { color: $text-secondary; }
+
+.muted { color: $text-muted; }
+.text-accent { color: $color-accent-pink; }
+
+
+/* Links */
+a {
+  color: $color-brand-600;
+  text-decoration: none;
+  &:hover { color: $color-brand-700; }
+
+}
+

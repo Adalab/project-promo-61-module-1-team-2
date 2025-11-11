@@ -49,9 +49,10 @@
   
 } 
 
+  /*-------------------------- Desktop------------------ */
 
 @media screen and (min-width: 1200px) {
-  /* Desktop */
+
 
   .block1 {
   width: 74rem;
@@ -64,44 +65,44 @@
   padding: 64px 0;
   }
 
-  .block1__card {
-    margin-top: 1rem;
+        .block1__card {
+            margin-top: 1rem;
 
-    
-}
+            
+        }
 
-.block1__card-img {
- width: 35.9rem;
- height: 39.5rem;
- position: relative;
- left: 35rem;
+                .block1__card-img {
+                width: 35.9rem;
+                height: 39.5rem;
+                position: relative;
+                left: 35rem;
 
- 
+                
 
-}
+            }
 
- .block1__box1 {
- position:relative;
- right: 25rem;
-    
-  }
+        .block1__box1 {
+        position:relative;
+        right: 25rem;
+            
+        }
 
-  .block1__box1--button {
-    background-color:  #5d50c6;
-    color: white;
-    width: 7.25rem;
-    height: 3rem;  
-    display: flex;
-    flex-direction: row;
-    padding: 1rem 2rem;
-    justify-content: center;
-    border-radius: 6rem;
-    margin-top: 7rem;
-    align-items: center;
-    margin-left: 8rem;
+                    .block1__box1--button {
+                        background-color:  #5d50c6;
+                        color: white;
+                        width: 7.25rem;
+                        height: 3rem;  
+                        display: flex;
+                        flex-direction: row;
+                        padding: 1rem 2rem;
+                        justify-content: center;
+                        border-radius: 6rem;
+                        margin-top: 7rem;
+                        align-items: center;
+                        margin-left: 8rem;
 
-  
-} 
+                    
+                    } 
 
 .block1__box1--h1 {
     color: black;
@@ -116,3 +117,65 @@
 }
 
 }
+
+
+/*-------------------------- Tablet ------------------ */
+
+@media (min-width: 768px) and (max-width: 1200px) {
+
+.block1 {
+  width: 74rem;
+  height: 47.5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 0.5rem 8rem 50rem;
+  padding: 64px 0;
+
+  }
+
+        .block1__card {
+            margin-top: 1rem;            
+        }
+
+                .block1__card-img {
+                width: 35.9rem;
+                height: 39.5rem;
+                position: relative;
+                left: 35rem;
+            }
+
+        .block1__box1 {
+        position:relative;
+        right: 25rem;
+        }
+
+                    .block1__box1--button {
+                        background-color:  #5d50c6;
+                        color: white;
+                        width: 7.25rem;
+                        height: 3rem;  
+                        display: flex;
+                        flex-direction: row;
+                        padding: 1rem 2rem;
+                        justify-content: center;
+                        border-radius: 6rem;
+                        margin-top: 7rem;
+                        align-items: center;
+                        margin-left: 8rem;
+                    }
+
+.block1__box1--h1 {
+    color: black;
+    text-align: left;
+    font-size: 2rem;
+    height: 10rem;
+    width: 32rem;
+    margin-left: 8rem;
+
+}
+
+}
+
+

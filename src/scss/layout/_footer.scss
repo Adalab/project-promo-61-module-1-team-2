@@ -16,10 +16,10 @@
       height: 40px;
       font-family: vars.$font-family-heading;
       font-size: vars.$font-size-xl2; /*24*/
-      font-weight: vars.$font-weight-bold-footer;
       line-height: 2.5rem; /*40*/
       text-align: left;
       color: vars.$text-primary;
+      font-weight: vars.$font-weight-bold-footer;
     }
   }
 
@@ -51,7 +51,7 @@
       color: vars.$text-secondary;
 
       &--title {
-        font-weight: vars.$font-weight-bold-footer;
+        font-weight: vars.$font-weight-bold;
         color: vars.$text-primary;
         font-size: vars.$font-size-xl;
       }
@@ -105,7 +105,7 @@
         margin-top: 0;
 
         &--title {
-          font-weight: vars.$font-weight-bold-footer;
+          font-weight: vars.$font-weight-bold;
           color: vars.$text-primary;
           font-size: vars.$font-size-xl;
         }
@@ -113,3 +113,4 @@
     }
   }
 }
+

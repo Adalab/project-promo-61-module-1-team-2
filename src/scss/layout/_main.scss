@@ -1,96 +1,84 @@
 @use "../core/variables" as vars;
+/*SECTION !*/
 .block1 {
-    background-color: white;
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    width: 27rem;
-    height: 38rem;
-    padding: 1rem;
-   
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 27rem;
+  height: 38rem;
+  padding: 1rem;
 }
 
 .block1__card {
-    margin-top: 1rem;
-    width: 27rem;
-    position: relative;
-    
+  margin-top: 1rem;
+  width: 27rem;
+  position: relative;
 }
-    
+
 .block1__card-img {
   margin-bottom: 2rem;
-  
-}  
+}
 
 .block1__box1--h1 {
-    color: black;
-    text-align: center;
-    font-size: large;
-
+  color: black;
+  text-align: center;
+  font-size: large;
 }
 
 .block1__box1--h1 span {
-    color: #f85e9f;
-    text-align: center;
-    
+  color: #f85e9f;
+  text-align: center;
 }
 
 .block1__box1--button {
-    background-color:  #5d50c6;
-    color: white;
-    width: 25rem;
-    height: 4rem;  
-    display: flex;
-    flex-direction: column;
-    padding: 0;
-    justify-content: center;
-    border-radius: 6rem;
-    margin-top: 2rem;
-  
-} 
-
+  background-color: #5d50c6;
+  color: white;
+  width: 25rem;
+  height: 4rem;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  justify-content: center;
+  border-radius: 6rem;
+  margin-top: 2rem;
+}
 
 @media screen and (min-width: 1200px) {
   /* Desktop */
 
   .block1 {
-  width: 74rem;
-  height: 47.5rem;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: center;
-  margin: 0.5rem 8rem 50rem;
-  padding: 64px 0;
+    width: 74rem;
+    height: 47.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0.5rem 8rem 50rem;
+    padding: 64px 0;
   }
 
   .block1__card {
     margin-top: 1rem;
+  }
 
-    
-}
+  .block1__card-img {
+    width: 35.9rem;
+    height: 39.5rem;
+    position: relative;
+    left: 35rem;
+  }
 
-.block1__card-img {
- width: 35.9rem;
- height: 39.5rem;
- position: relative;
- left: 35rem;
-
- 
-
-}
-
- .block1__box1 {
- position:relative;
- right: 25rem;
-    
+  .block1__box1 {
+    position: relative;
+    right: 25rem;
   }
 
   .block1__box1--button {
-    background-color:  #5d50c6;
+    background-color: #5d50c6;
     color: white;
     width: 7.25rem;
-    height: 3rem;  
+    height: 3rem;
     display: flex;
     flex-direction: row;
     padding: 1rem 2rem;
@@ -99,25 +87,19 @@
     margin-top: 7rem;
     align-items: center;
     margin-left: 8rem;
+  }
 
-  
-} 
-
-.block1__box1--h1 {
+  .block1__box1--h1 {
     color: black;
     text-align: left;
     font-size: 2rem;
     height: 10rem;
     width: 32rem;
     margin-left: 8rem;
-   
-   
-    
+  }
 }
 
-}
-
-/* SECCIÓN 2*/
+/* SECTION 2*/
 
 .destination {
   width: 100vw;
@@ -186,7 +168,6 @@
     &__header {
       /*dejo libre por si necesito meter más separación en caso de que soraya no lo tenga*/
       text-align: center;
-      margin: 2rem;
       &-title {
         font-weight: vars.$font-weight-bold;
         line-height: vars.$line-height-card;
@@ -204,17 +185,18 @@
       /*dejo libre por si necesito meter más separación en caso de que soraya no lo tenga*/
       text-align: left;
       margin-top: 2rem;
-      margin-left: 9.0625rem;
+      margin-left: 2rem;
     }
     &__list {
       display: grid;
-      grid-template-columns: 1fr 1fr 1fr minmax(378px, 1fr);
+      grid-template-columns: 1fr 1fr minmax(378px, 1fr);
       justify-items: center;
       padding-right: 2.25rem;
       list-style: none;
       gap: 1rem;
-      padding-left: 9.0625rem;
+      padding-left: 2rem;
       margin-left: 0rem;
+      padding-top: 2.5rem;
     }
 
     .card {
@@ -231,3 +213,47 @@
     }
   }
 }
+
+@media all and (min-width: 1440px) {
+  .destination {
+    &__header {
+      /*dejo libre por si necesito meter más separación en caso de que soraya no lo tenga*/
+      text-align: left;
+      margin-top: 2rem;
+      margin-left: 10rem;
+    }
+    &__list {
+      display: grid;
+      grid-template-columns: 1fr 1fr minmax(378px, 1fr);
+      justify-items: center;
+      padding-right: 2.25rem;
+      list-style: none;
+      gap: 1rem;
+      padding-left: 9.0625rem;
+      margin-left: 0rem;
+    }
+  }
+}
+
+@media all and (min-width: 1600px) {
+  .destination {
+    &__header {
+      /*dejo libre por si necesito meter más separación en caso de que soraya no lo tenga*/
+      text-align: center;
+      margin-top: 0;
+      margin-left: 0;
+    }
+    &__list {
+      display: grid;
+      grid-template-columns: 1fr 1fr minmax(378px, 1fr);
+      justify-items: center;
+      padding-right: 2.25rem;
+      list-style: none;
+      gap: 1rem;
+      padding-left: 4.5rem;
+      margin-left: 0rem;
+      padding-right: 5rem;
+    }
+  }
+}
+

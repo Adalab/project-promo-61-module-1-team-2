@@ -2,159 +2,167 @@
 
 /* Contenedor base si no lo tienes ya */
 .container {
-  width: min(1200px, 100% - 2rem);
-  margin-inline: auto;
+    width: min(1200px, 100% - 2rem);
+    margin-inline: auto;
 }
 
 /* ===========================
    HERO PERFIL + KPIs
    =========================== */
 .profile-hero {
-  /* Gradiente como el diseño */
-  background: radial-gradient(120% 90% at 65% 0%,
-              #e9e7fb 0%, #a99cf6 40%, #6a55f3 60%, #111a3b 100%);
-  color: vars.$text-primary;
-  /* Altura visual cómoda */
-  padding-block: vars.$space-16; /* 64px aprox */
-  position: relative;
-  overflow: hidden;
-
-  @media (min-width: vars.$bp-lg) {
-    padding-block: vars.$space-20;
-  }
-
-  &__inner {
-    display: grid;
-    align-items: center;
-    gap: vars.$space-10;
-
-    /* 2 columnas en desktop, 1 en mobile */
-    grid-template-columns: 1fr;
-    @media (min-width: vars.$bp-lg) {
-      grid-template-columns: 0.9fr 1.1fr;
-      gap: vars.$space-12;
-    }
-  }
-
-  /* ---- Media (imagen) ---- */
-  &__media {
-    display: grid;
-    align-items: end;
-    justify-items: start;
-    /* para que la figura “asiente” en la parte oscura del gradiente */
-    padding-bottom: vars.$space-6;
-
-    @media (min-width: vars.$bp-lg) {
-      padding-bottom: 0;
-    }
-  }
-
-  &__img {
-    display: block;
-    height: auto;
-    width: min(520px, 90%);
-    max-width: 100%;
-    filter: drop-shadow(0 18px 32px rgba(0, 0, 0, .28));
-
-    @media (min-width: vars.$bp-lg) {
-      width: min(560px, 100%);
-    }
-  }
-
-  /* ---- Content ---- */
-  &__content {
-    display: grid;
-    align-content: start;
-    gap: vars.$space-6;
-  }
-
-  &__title {
-    font-family: vars.$font-family-heading;
-    font-weight: vars.$font-weight-extrabold;
-    line-height: vars.$line-height-tight;
+    /* Gradiente como el diseño */
+    background: radial-gradient(120% 90% at 65% 0%,
+            #e9e7fb 0%, #a99cf6 40%, #6a55f3 60%, #111a3b 100%);
     color: vars.$text-primary;
-    letter-spacing: -0.02em;
-    margin: 0;
+    /* Altura visual cómoda */
+    padding-block: vars.$space-16;
+    /* 64px aprox */
+    position: relative;
+    overflow: hidden;
 
-    /* clamp grande → como en el diseño */
-    font-size: clamp(2rem, 3.5vw, 3rem);
-  }
+    @media (min-width: vars.$bp-lg) {
+        padding-block: vars.$space-16;
+        /* 80px aprox */
+    }
 
-  &__role {
-    margin: 0;
-    font-size: vars.$font-size-md;
-    color: vars.$text-secondary;
-  }
+    &__inner {
+        display: grid;
+        align-items: center;
+        gap: vars.$space-10;
+
+        /* 2 columnas en desktop, 1 en mobile */
+        grid-template-columns: 1fr;
+
+        @media (min-width: vars.$bp-lg) {
+            grid-template-columns: 0.9fr 1.1fr;
+            gap: vars.$space-12;
+        }
+    }
+
+    /* ---- Media (imagen) ---- */
+    &__media {
+        display: grid;
+        align-items: end;
+        justify-items: start;
+        /* para que la figura “asiente” en la parte oscura del gradiente */
+        padding-bottom: vars.$space-6;
+
+        @media (min-width: vars.$bp-lg) {
+            padding-bottom: 0;
+        }
+    }
+
+    &__img {
+        display: block;
+        height: auto;
+        width: min(520px, 90%);
+        max-width: 100%;
+        filter: drop-shadow(0 18px 32px rgba(0, 0, 0, .28));
+
+        @media (min-width: vars.$bp-lg) {
+            width: min(560px, 100%);
+        }
+    }
+
+    /* ---- Content ---- */
+    &__content {
+        display: grid;
+        align-content: start;
+        gap: vars.$space-6;
+    }
+
+    &__title {
+        font-family: vars.$font-family-heading;
+        font-weight: vars.$font-weight-bold;
+        line-height: vars.$line-height-tight;
+        color: vars.$text-primary;
+        letter-spacing: -0.02em;
+        margin: 0;
+
+        /* clamp grande → como en el diseño */
+        font-size: clamp(2rem, 3.5vw, 3rem);
+    }
+
+    &__role {
+        margin: 0;
+        font-size: vars.$font-size-md;
+        color: vars.$text-secondary;
+    }
 }
 
 /* ===========================
    KPI BAR
    =========================== */
 .kpi-bar {
-  position: relative;
-  margin-top: vars.$space-6;
-  background: linear-gradient(180deg, rgba(7, 12, 32, 0.86) 0%, rgba(12, 17, 40, 0.98) 100%);
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  border-radius: vars.$radius-2xl;
-  box-shadow: vars.$shadow-lg;
-  padding: vars.$space-6;
-  display: grid;
-  gap: vars.$space-6;
-
-  /* 2 columnas en mobile, 4 en desktop */
-  grid-template-columns: repeat(2, 1fr);
-
-  @media (min-width: vars.$bp-md) {
-    grid-template-columns: repeat(4, 1fr);
-    padding: vars.$space-7 vars.$space-8;
-  }
-
-  &__item {
-    text-align: left;
+    position: relative;
+    margin-top: vars.$space-6;
+    background: linear-gradient(180deg, rgba(7, 12, 32, 0.86) 0%, rgba(12, 17, 40, 0.98) 100%);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: vars.$radius-xl;
+    box-shadow: vars.$shadow-lg;
+    padding: vars.$space-6;
     display: grid;
-    gap: vars.$space-1;
-    min-width: 0; /* segura truncamientos */
-  }
+    gap: vars.$space-6;
 
-  &__value {
-    font-family: vars.$font-family-heading;
-    font-weight: vars.$font-weight-bold;
-    color: #ffffff;
-    line-height: vars.$line-height-tight;
-    font-size: clamp(1.5rem, 3.2vw, 2rem);
-    letter-spacing: .01em;
-    white-space: nowrap; /* para valores largos como 11 563 200 */
-  }
+    /* 2 columnas en mobile, 4 en desktop */
+    grid-template-columns: repeat(2, 1fr);
 
-  &__label {
-    font-size: vars.$font-size-sm;
-    color: rgba(255, 255, 255, 0.75);
-  }
-
-  &__note {
-    position: absolute;
-    right: vars.$space-6;
-    bottom: vars.$space-3;
-    color: rgba(255, 255, 255, 0.65);
-    font-size: vars.$font-size-xs;
-    @media (max-width: vars.$bp-sm) {
-      position: static;
-      justify-self: end;
-      margin-top: calc(-1 * vars.$space-3);
+    @media (min-width: vars.$bp-md) {
+        grid-template-columns: repeat(4, 1fr);
+        
     }
-  }
+
+    &__item {
+        text-align: left;
+        display: grid;
+        gap: vars.$space-1;
+        min-width: 0;
+        /* segura truncamientos */
+    }
+
+    &__value {
+        font-family: vars.$font-family-heading;
+        font-weight: vars.$font-weight-bold;
+        color: #ffffff;
+        line-height: vars.$line-height-tight;
+        font-size: clamp(1.5rem, 3.2vw, 2rem);
+        letter-spacing: .01em;
+        white-space: nowrap;
+        /* para valores largos como 11 563 200 */
+    }
+
+    &__label {
+        font-size: vars.$font-size-sm;
+        color: rgba(255, 255, 255, 0.75);
+    }
+
+    &__note {
+        position: absolute;
+        right: vars.$space-6;
+        bottom: vars.$space-3;
+        color: rgba(255, 255, 255, 0.65);
+        font-size: vars.$font-size-xs;
+
+        @media (max-width: vars.$bp-sm) {
+            position: static;
+            justify-self: end;
+            margin-top: calc(-1 * vars.$space-3);
+        }
+    }
 }
 
 /* Pequeños ajustes responsive */
 @media (max-width: vars.$bp-md) {
-  .profile-hero__content {
-    order: 2;
-  }
-  .profile-hero__media {
-    order: 1;
-    justify-items: center;
-  }
-  .profile-hero__img {
-    width: min(420px, 85%);
-  }
+    .profile-hero__content {
+        order: 2;
+    }
+
+    .profile-hero__media {
+        order: 1;
+        justify-items: center;
+    }
+
+    .profile-hero__img {
+        width: min(420px, 85%);
+    }
 }

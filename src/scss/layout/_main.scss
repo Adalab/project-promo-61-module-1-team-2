@@ -168,7 +168,6 @@
     &__header {
       /*dejo libre por si necesito meter más separación en caso de que soraya no lo tenga*/
       text-align: center;
-      margin: 2rem;
       &-title {
         font-weight: vars.$font-weight-bold;
         line-height: vars.$line-height-card;
@@ -186,17 +185,18 @@
       /*dejo libre por si necesito meter más separación en caso de que soraya no lo tenga*/
       text-align: left;
       margin-top: 2rem;
-      margin-left: 9.0625rem;
+      margin-left: 2rem;
     }
     &__list {
       display: grid;
-      grid-template-columns: 1fr 1fr 1fr minmax(378px, 1fr);
+      grid-template-columns: 1fr 1fr minmax(378px, 1fr);
       justify-items: center;
       padding-right: 2.25rem;
       list-style: none;
       gap: 1rem;
-      padding-left: 9.0625rem;
+      padding-left: 2rem;
       margin-left: 0rem;
+      padding-top: 2.5rem;
     }
 
     .card {
@@ -220,7 +220,40 @@
       /*dejo libre por si necesito meter más separación en caso de que soraya no lo tenga*/
       text-align: left;
       margin-top: 2rem;
-      margin-left: 35rem;
+      margin-left: 10rem;
+    }
+    &__list {
+      display: grid;
+      grid-template-columns: 1fr 1fr minmax(378px, 1fr);
+      justify-items: center;
+      padding-right: 2.25rem;
+      list-style: none;
+      gap: 1rem;
+      padding-left: 9.0625rem;
+      margin-left: 0rem;
     }
   }
 }
+
+@media all and (min-width: 1600px) {
+  .destination {
+    &__header {
+      /*dejo libre por si necesito meter más separación en caso de que soraya no lo tenga*/
+      text-align: center;
+      margin-top: 0;
+      margin-left: 0;
+    }
+    &__list {
+      display: grid;
+      grid-template-columns: 1fr 1fr minmax(378px, 1fr);
+      justify-items: center;
+      padding-right: 2.25rem;
+      list-style: none;
+      gap: 1rem;
+      padding-left: 4.5rem;
+      margin-left: 0rem;
+      padding-right: 5rem;
+    }
+  }
+}
+

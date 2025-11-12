@@ -19,39 +19,37 @@
     color: vars.$text-primary;
   }
   &__grid {
-      display: grid;
-      grid-template-columns: 1fr;
-      font-weight: 700;
-      font-size: 1.4375rem;
-    
+    display: grid;
+    grid-template-columns: 1fr;
+    font-weight: 700;
+    font-size: 1.4375rem;
+
     .box-elements {
-    display: inline-flex;
-    justify-content: flex-start;
-    align-items: start;
-    text-align: start;
-    gap: 1rem;
-    margin-left: 1rem;
-    .field {
-      display: flex;
-      flex-direction: column;
-   
-      &__label {
-         font-family: vars.$font-family-heading;
-      font-size: vars.$font-size-xl2; /*24*/
-      line-height: 2.5rem; /*40*/
-      text-align: left;
-      color: vars.$text-primary;
-      font-weight: vars.$font-weight-bold-footer;
-      
-      }
-      &__value {
-        font-weight: vars.$font-weight-bold;
-        font-family: vars.$font-family-heading;
-        font-weight: vars.$font-weight-bold;
-        line-height: vars.$line-height-card;
-        font-size: 1.125rem;
-        color: vars.$text-primary;
-      }
+      display: inline-flex;
+      justify-content: flex-start;
+      align-items: start;
+      text-align: start;
+      gap: 1rem;
+      margin-left: 1rem;
+      .field {
+        display: flex;
+        flex-direction: column;
+
+        &__label {
+          font-family: vars.$font-family-heading;
+          font-size: vars.$font-size-xl2; /*24*/
+          line-height: 2.5rem; /*40*/
+          text-align: left;
+          font-weight: vars.$font-weight-bold;
+          color: vars.$text-primary;
+          font-size: vars.$font-size-xl;
+        }
+        &__value {
+          font-size: vars.$font-size-lg;
+          font-family: vars.$font-family-heading;
+          color: vars.$text-secondary;
+          font-weight: 100;
+        }
       }
       .brand2 {
         display: flex;
@@ -63,18 +61,17 @@
         justify-content: center;
         align-items: center;
       }
-    
-  }
+    }
 
-  .icon2 {
-    color: #5d50c6;
-    font-size: 25px;
+    .icon2 {
+      color: #5d50c6;
+      font-size: 25px;
+    }
   }
-}
 }
 @media all and (min-width: 768px) {
   .card2 {
-    width: 700px;
+    width: 780px;
     height: 400px;
     &__grid {
       display: grid;

@@ -4,20 +4,18 @@
     height: 51rem;
 
 
-}
+    &__h3 {
 
-.form__h3 {
-    color:#f85e9f;
-    padding: 8rem 3rem 3rem;
-    font-size: 1.4rem;
-    font-style: normal;
-    
-  
-    
-}
+      color:#f85e9f;
+      padding: 8rem 3rem 3rem;
+      font-size: 1.4rem;
+      font-style: normal;
+    }
+  }
 
 
 .form__card {
+
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -27,8 +25,15 @@
     height: 5rem;
     margin-left: 4rem;
     margin-right: 4rem;
- 
+    position: relative;
+    
 }
+
+.form__card--image {
+  width:27rem;
+  height:24.5rem;
+}
+
 
 /*TEXT INSIDE FORM*/
 
@@ -59,15 +64,24 @@ input[type=submit] {
   font-weight: bold;
 }
 
-.form_map--image{
-    margin: -1.5rem ;
-    margin-bottom: 13.3rem;
+.form__card--map {
+    margin: 0rem ;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    display:flex;
+    flex-direction: column;
+    float: right;
+    position: relative;
+
  
     
 }
 
+
+  /*-------------------------- Desktop------------------ */
+
 @media screen and (min-width: 1200px) {
-  /* Desktop */
+
 
   input[type=text] {
     width: 49rem ;
@@ -84,23 +98,54 @@ input[type=submit] {
  
 }
 
+.form__card {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.7rem;
+    outline: none;
+    border: 0;
+    height: 5rem;
+    margin-left: 4rem;
+    margin-right: 4rem;
+
+    
+}
+
+.form__card--image {
+    margin: 0rem ;
+    margin-bottom: 1rem;
+    display:flex;
+    flex-direction: row;
+    float: right;
+    width: 55.9rem;
+    height: 51rem;
+    margin-top: -5rem;
+    justify-content: flex-end;
+}
+
+ 
+@media screen and (max-width: 780px) {
+
+.form__card--image {
+  width:27rem;
+  height:24.5rem;
+}
+
+}  
 
 
+/*-------------------------- Tablet ------------------ */
 
+@media (min-width: 768px) and (max-width: 1200px) {
 
-
-@media screen and (max-width: 768px - 1200px) {
-  /* Tablet */
+    .form__card--image {
+  width:27rem;
+  height:24.5rem;
+}
 
 
 }
 
 
-
-@media screen and (min-width: 768px) {
-  /* Tablet */
-
-
-
-
-}

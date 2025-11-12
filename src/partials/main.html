@@ -1,40 +1,58 @@
-<main class="page__main">
-  <h2>Este es el starter kit de Adalab</h2>
-  <p>Lo usamos para aprender:</p>
-  <ul class="main__list">
-    <li>Sass</li>
-    <li>HTML partials</li>
-    <li>Gulp</li>
-    <li>y muchas cosas más</li>
+<section class="block1">
+
+    <div class="block1__card">
+        <img class="block1__card-img" src="/images/5.png" alt="travel images" width="292.2px" height="324.4px">
+    </div>
+
+    <div class="block1__box1"> 
+
+        <div class="block1__box1--h1">
+            <h1>Travel<span> top destination </span><br>of the world</h1>
+        </div>
+
+        <div>
+           <a href="./signup.html"><button class="block1__box1--button"><p>Get Started</p></button></a>
+        </div>
+
+</section>
+<section class="destination">
+  <div class="destination__header">
+    <span class="destination__header-title">Top destination</span>
+  </div>
+  <ul class="destination__list">
+    <!-- Card 1 -->
+    <li class="card">
+      <a class="card__link" href="#">
+        <figure class="card__media">
+          <img class="card__media" src="/images/3.png" alt="Playa con barcas" />
+        </figure>
+        <div class="card__info">
+          <span class="card__price">$550.16</span>
+          <span class="card__title">Lorem</span>
+        </div>
+      </a>
+    </li>
+
+    <!-- Card 2 -->
+    <li class="card">
+      <a class="card__link" href="#">
+        <img src="/images/4.png" alt="Pez león" />
+        <div class="card__info">
+          <span class="card__price">$20.99</span>
+          <span class="card__title">Lorem</span>
+        </div>
+      </a>
+    </li>
+
+    <!-- Card 3 -->
+    <li class="card">
+      <a class="card__link" href="#">
+        <img src="/images/2.png" alt="Montañas azules" />
+        <div class="card__info">
+          <span class="card__price">$150.99</span>
+          <span class="card__title">Lorem</span>
+        </div>
+      </a>
+    </li>
   </ul>
-  <p>Si quieres saber cúales son las rutas correctas para:</p>
-  <ul class="main__list">
-    <li>
-      una <code class="code">&lt;img /&gt;</code> mira el fichero
-      <code class="code">./src/html/partials/header.html</code>.
-    </li>
-    <li>
-      y para un <code class="code">background-image</code> mira el fichero
-      <code class="code">./src/html/scss/layout/_page.scss</code>.
-    </li>
-  </ul>
-  <p>
-    Si quieres saber cómo usar un partial HTML dentro de otro partial, busca en la carperta
-    <code class="code">./src/html/index.html</code> y
-    <code class="code">./src/html/partials/main.html</code>, y verás cómo estamos creando estos
-    enlaces:
-  </p>
-  <ul class="main__list">
-    <li>
-      <load
-        src="/partials/link.html"
-        aClass="link__adalab"
-        text="Adalab"
-        url="https://adalab.es"
-      />
-    </li>
-    <li>
-      <load src="/partials/link.html" text="Más info del starter kit" url="./more-info.html" />
-    </li>
-  </ul>
-</main>
+</section>

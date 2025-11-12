@@ -6,32 +6,35 @@
     
     
     .page-servicios__image {
-        padding: vars.$space-8;
+        margin: 3rem;
+        width: 350px;
+        height: 438.9px;
     }
     .page-servicios__title {
         margin: 0 auto; /*centrar elementos medio*/
         display: flex;
         flex-direction: column;
-        width: 25%;
+        justify-content: center;
+        text-align: center;
         gap: 0.5rem;
         h2 {
             font-family: vars.$font-family-heading;
             font-size: vars.$font-size-md;
             letter-spacing: 0.08em;
             display: flex;
-            justify-content: center;
             color: vars.$color-accent-pink;
+            justify-content: center;
 
         }
         h1 {
             font-family: vars.$font-family-body;
             font-weight: bold;
-            justify-content: center;
+            
             display: flex;
-            text-align: center;
+            
             font-size: vars.$font-size-3xl; 
         }
-
+        
         }
     .page-servicios__cards {
         display: flex;
@@ -58,15 +61,48 @@
                 width: 100px;
                 height: 100px;
                 border-radius: 25%;
-                background-color: vars.$color-accent-pink;
                 color: vars.$color-neutral-0;
-                
+            
+                &--orange {
+                    background-color: orangered;
+                }
+                &--yellow {
+                    background-color: vars.$color-accent-yellow;
+                }
+                &--pink{
+                    background-color: vars.$color-accent-pink;
+                }
             }
-               
+             &:hover {
+                
+                border: 2px solid rgb(173, 173, 173);
+                border-radius: 20px;
+             }  
+        }  
+    }
+
+    /* MEDIA QUERIES */
+  
+        /* Tablet */
+    @media (min-width:768px) {
+       .page-servicios__title h1 br{
+        display: none;
+        }   
+        .page-servicios__title h2 {
+            justify-content: flex-start;
         }
-        
+        .page-servicios__card {
+            flex-direction: row;
+            background-color: red;
+            
+        }  
     }
+        /* Desktop */
+    @media (min-width:1024px) {
+    
+          
     }
+}
         
   
 

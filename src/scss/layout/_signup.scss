@@ -2,17 +2,23 @@
     background-color: #FFFFC5;
     width: 27rem;
     height: 51rem;
+    margin-left: 3rem;
+    display:flex;
+    flex-direction:column;
 
+  }
 
-    &__h3 {
+   .form__h3 {
 
       color:#f85e9f;
       padding: 8rem 3rem 3rem;
       font-size: 1.4rem;
       font-style: normal;
     }
-  }
 
+.container {
+  margin-left: 0rem;
+}
 
 .form__card {
 
@@ -26,13 +32,10 @@
     margin-left: 4rem;
     margin-right: 4rem;
     position: absolute;
+
     
 }
 
-.form__card--image {
-  width:27rem;
-  height:24.5rem;
-}
 
 
 /*TEXT INSIDE FORM*/
@@ -64,7 +67,7 @@ input[type=submit] {
   font-weight: bold;
 }
 
-.form__card--map {
+.container__image{
     margin: 0rem ;
     margin-top: 0;
     margin-bottom: 1rem;
@@ -93,6 +96,7 @@ input[type=submit] {
     background-color: #FFFFC5;
     width: 55.9rem;
     height: 51rem;
+    display:inline-flex;
   }
 
  
@@ -114,21 +118,11 @@ input[type=submit] {
     
 }
 
-.form__card--image {
-    margin: 0rem;
-    margin-bottom: 1rem;
-    float:right;
-    width: 55.9rem;
-    height: 51rem;
-    margin-top: -5rem;
-    justify-content: flex-end;
-   
-}
 
- 
+
 @media screen and (max-width: 780px) {
 
-.form__card--image {
+.container__image {
   width:27rem;
   height:24.5rem;
 }
@@ -140,7 +134,7 @@ input[type=submit] {
 
 @media (min-width: 768px) and (max-width: 1200px) {
 
-    .form__card--image {
+    .container__image{
   width:27rem;
   height:24.5rem;
 }

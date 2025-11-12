@@ -1,0 +1,129 @@
+@use '../core/variables' as vars;
+
+.page-servicios {
+    
+    .page-servicios__image {
+        width: 350px;
+        margin: 0 auto;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .page-servicios__container {
+        padding: 1rem; 
+        
+        .page-servicios__title {
+            
+            margin-bottom: 1rem;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            align-items: center;
+            gap: 0.5rem;
+            
+            h2 {
+                font-family: vars.$font-family-heading;
+                font-size: vars.$font-size-md;
+                letter-spacing: 0.08em;
+                display: flex;
+                color: vars.$color-accent-pink;
+                justify-content: center;
+
+            }
+            h1 {
+                font-family: vars.$font-family-body;
+                font-weight: bold;
+                
+                display: flex;
+                
+                font-size: vars.$font-size-3xl; 
+            }
+            
+            }
+        .page-servicios__cards {
+            
+            
+            .page-servicios__card {
+                padding: 2rem;
+                
+                
+                h1 {
+                    font-size: vars.$font-size-xl;
+                }
+                p {
+                    font-size: vars.$font-size-lg;
+                    color: grey;
+                }
+                .page-servicios__icon {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin-bottom: 1rem;
+                    width: 4rem;
+                    height: 4rem;
+                    border-radius: 25%;
+                    color: vars.$color-neutral-0;
+                    font-size: 2rem; 
+                    flex-shrink: 0;
+                
+                    &--orange {
+                        background-color: orangered;
+                    }
+                    &--yellow {
+                        background-color: vars.$color-accent-yellow;
+                    }
+                    &--pink{
+                        background-color: vars.$color-accent-pink;
+                    }
+                }
+                &:hover {
+                    
+                    border: 2px solid rgb(173, 173, 173);
+                    border-radius: 20px;
+                }  
+            }  
+        }
+}
+}
+  /* MEDIA QUERIES */
+  
+        /* Tablet */
+    @media (min-width:768px) {
+        .page-servicios__title h1 br{
+        display: none;
+        }   
+        .page-servicios__title {
+            align-items: flex-start; 
+            text-align: left;
+        }
+           
+    }
+        /* Desktop */
+    @media (min-width:1024px) {
+        .page-servicios {
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: center;
+
+            .page-servicios__image{
+                width: 693px;
+                height: 869px;
+                justify-content: flex-end;
+            }
+            .page-servicios__container {
+                width: 40%; 
+                padding: 4rem;
+                .page-servicios__title {
+                    align-items: flex-start;
+                }
+            }
+        }
+      .page-servicios__card {
+            display: flex;
+            flex-direction: row;
+            gap: 2rem;
+            
+        }
+    }

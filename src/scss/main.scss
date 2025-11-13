@@ -1,18 +1,16 @@
-@use 'core/variables';
-@use 'core/reset';
-@use 'components/code';
-@use 'components/links';
-@use 'layout/page';
-@use 'layout/header';
-@use 'layout/main';
-@use 'layout/signup';
-@use 'layout/footer';
-@use 'pages/index';
-@use 'layout/_page-servicios';
-@use 'layout/travel-point';
-@use 'components/card-trabajos';
-@use 'layout/profesionalsoraya';
-@use 'layout/profesional';
-
-
-
+@use "core/variables";
+@use "core/reset";
+@use "components/code";
+@use "components/links";
+@use "layout/page";
+@use "layout/header";
+@use "layout/main";
+@use "layout/signup";
+@use "layout/footer";
+@use "pages/index";
+@use "layout/_page-servicios";
+@use "layout/travel-point";
+@use "components/card-trabajos";
+@use "layout/profesional_malina";
+@use "layout/profesionalsoraya";
+@use "layout/profesional";

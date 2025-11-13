@@ -31,8 +31,8 @@
 
 .container {
   display: flex;
-  flex-direction: column; 
-  align-items: center;    
+  flex-direction: column; // hace que el form esté arriba y el mapa debajo
+  align-items: center;    // centra horizontalmente los elementos
   gap: 20rem;              
 }
 
@@ -79,6 +79,18 @@ input[type=submit] {
   font-weight: bold;
 }
 
+.container__img {
+    margin: 0rem ;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    display:flex;
+    flex-direction: column;
+    float: right;
+    position: relative;
+
+ 
+    
+}
 
 
   /*-------------------------- Desktop------------------ */
@@ -99,30 +111,47 @@ input[type=submit] {
     display:inline-flex;
   }
 
-  .container {
-  display: flex;
-  flex-direction: row; 
-  align-items: center;    
-  gap: 2rem;  
-  margin: -10rem;
-          
+ 
 }
 
-.container__img {
-  margin-top: 30rem;  
-  width: 55.9rem;
-  height: 51rem;
-       
-  img {
-    width: auto;
-    height: auto;
+.form__card {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.7rem;
+    outline: none;
+    border: 0;
+    height: 5rem;
+    margin-left: 4rem;
+    margin-right: 4rem;
+    position: absolute;
+
     
-  }
-}
-
 }
 
 
 
+@media screen and (max-width: 780px) {
+
+.container__image {
+  width:27rem;
+  height:24.5rem;
+}
+
+}  
+
+
+/*-------------------------- Tablet ------------------ */
+
+@media (min-width: 768px) and (max-width: 1200px) {
+
+    .container__image{
+  width:27rem;
+  height:24.5rem;
+}
+
+
+}
 
 

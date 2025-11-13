@@ -1,0 +1,41 @@
+
+@use '../core/variables' as vars;
+
+.card {
+  font-family: vars.$font-family-heading;
+  background-color: #fff;
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  padding: 1.5rem;
+  margin: 2rem;
+  max-width: 400px;
+  max-height: 300px;
+}
+
+h2 {
+  color: #000000;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.work {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.team-name {
+  font-weight: 500;
+  color: #444;
+}
+
+.year {
+  font-weight: 400;
+  color: #777;
+}
+.list-work {
+    max-height: 150px; 
+    overflow-y: auto; /*SCROLL*/
+    padding-right: 8px;
+}

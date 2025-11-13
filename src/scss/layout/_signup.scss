@@ -1,10 +1,11 @@
 .form {
     background-color: rgba(250, 205, 73, 0.08);
     width: 27rem;
-    height: 51rem;
+    height: 57rem;
     margin-left: 3rem;
     display:flex;
     flex-direction:column;
+    margin-top: 0rem;
 
   }
 
@@ -16,39 +17,48 @@
       font-style: normal;
     }
 
-.container {
-  display:flex;
-  flex-direction: column;
-}
-
 .container__form {
-
-    display: flex;
-    flex-direction: column;
     align-items: center;
-    gap: 2.7rem;
+    gap: 5rem;
     outline: none;
-    border: 0;
     height: 5rem;
-    margin-left: 3rem;
-    margin-right: 4rem;
-    position: absolute;
-
+    margin-left: 1rem;
+    margin-right: 2rem;
+    position: relative;
     
+  
 }
 
+.container {
+  display: flex;
+  flex-direction: column; // hace que el form esté arriba y el mapa debajo
+  align-items: center;    // centra horizontalmente los elementos
+  gap: 20rem;              
+}
 
+.container__img {
+  margin-top: 30rem;  
+       
+  img {
+    max-width: 100%;      
+    height: auto;
+    
+  }
+}
 
+ 
 /*TEXT INSIDE FORM*/
 
 input[type=text] {
   border: none;
-  padding: 1.9rem;
+  padding: 1.3rem;
   border-radius: 3rem;
   font-size: large;
   margin-left: 2rem;
   margin-right: 4rem;
   font-weight: bold;
+  margin: 1rem;
+ 
 
 
 
@@ -62,9 +72,10 @@ input[type=submit] {
   padding: 2rem 4rem;
   border-radius: 2rem;
   margin-bottom: 8rem;
-  margin-left: 4rem;
+  margin-left: 2rem;
+  margin-top: 1rem;
   margin-right: 10.5rem;
-  font-size: 1.4rem;
+  font-size: 1rem;
   font-weight: bold;
 }
 

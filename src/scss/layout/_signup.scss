@@ -1,5 +1,5 @@
 .form {
-    background-color: #FFFFC5;
+    background-color: rgba(250, 205, 73, 0.08);
     width: 27rem;
     height: 51rem;
     margin-left: 3rem;
@@ -17,10 +17,11 @@
     }
 
 .container {
-  margin-left: 0rem;
+  display:flex;
+  flex-direction: column;
 }
 
-.form__card {
+.container__form {
 
     display: flex;
     flex-direction: column;
@@ -29,7 +30,7 @@
     outline: none;
     border: 0;
     height: 5rem;
-    margin-left: 4rem;
+    margin-left: 3rem;
     margin-right: 4rem;
     position: absolute;
 
@@ -67,7 +68,7 @@ input[type=submit] {
   font-weight: bold;
 }
 
-.container__image{
+.container__img {
     margin: 0rem ;
     margin-top: 0;
     margin-bottom: 1rem;
@@ -93,7 +94,7 @@ input[type=submit] {
 
 
   .form {
-    background-color: #FFFFC5;
+    background-color: rgba(250, 205, 73, 0.08);
     width: 55.9rem;
     height: 51rem;
     display:inline-flex;

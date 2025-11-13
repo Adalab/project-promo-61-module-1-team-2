@@ -1,36 +1,38 @@
 <!--CONTACT MOBILE-->
 
-<section class="form"> 
+ <form class="form" action="/signup" method="get">
 
-    <form action="/signup" method="get">
+    <div class="form__h3"><h3>Suscríbete</h3></div>
 
-        <h3 class="form__h3">SUSCRIBETE</h3>
+    <div class="container" >
 
-        <div class="form__card"> 
+        <div class="container__form">
+            
+                <div class="container__form--email">
+                <input placeholder= "Email" type="text" name="email">
+                 </div>
 
-                <div class="form__card--email">
-                    <input placeholder= "Email" type="text" name="email">
+                <div class="container__form--name">
+                <input placeholder="Nombre" type="text" name="Name">
+                </div>
+                                                
+                <div class="container__form--comment">
+                <input placeholder="Comentario" type="text" name="Comment">
                 </div>
 
-                <div class="form__card--name">
-                    <input placeholder="Nombre" type="text" name="Name">
+                <div class="container__form--bottom">
+                <input type="submit" value="Enviar">
                 </div>
         
-                <div class="form__card--comment">
-                    <input placeholder="Comentario" type="text" name="Comment">
-                </div>
+        </div> 
 
-                <div class="form__bottom">
-                    <input type="submit" value="Enviar">
-                </div>
+        <div>
+          <img src="/images/mapa-madrid.jpg" alt="mapa madrid" width="430px" height="392px">
+        </div>
+              
 
-                <div class="form_map">
-                    <img class="form_map--image" src="/images/mapa-madrid.jpg" alt="mapa madrid" width="430px" height="392px">
-                </div>
-          
+    </div>
 
-      </div>
 
-    </form>
+</form>
 
-</section>

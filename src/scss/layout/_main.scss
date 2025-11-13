@@ -9,16 +9,28 @@
   width: 27rem;
   height: 38rem;
   padding: 1rem;
+  margin-left: 3rem;
+  margin-bottom: 0rem;
+
 }
 
 .block1__card {
   margin-top: 1rem;
-  width: 27rem;
+  width: 30rem;
   position: relative;
+  align-items: center;
+  margin-right: 2rem;
+  justify-items: left;
 }
 
 .block1__card-img {
   margin-bottom: 2rem;
+  align-items: center;
+  width: 20rem;
+  justify-content: left;
+  margin-right: 1rem;
+  padding: 0rem;
+  margin-left: 5rem;
 }
 
 .block1__box1--h1 {
@@ -34,7 +46,6 @@
 
 .block1__box1--button {
   background-color: #5d50c6;
-  color: white;
   width: 25rem;
   height: 4rem;
   display: flex;
@@ -45,6 +56,10 @@
   margin-top: 2rem;
 }
 
+.block1__box1--button p {
+  color:white;
+}
+
 @media screen and (min-width: 1200px) {
   /* Desktop */
 
@@ -53,14 +68,18 @@
     height: 47.5rem;
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: left;
     align-items: center;
-    margin: 0.5rem 8rem 50rem;
-    padding: 64px 0;
+    margin-left: 0rem;
+    justify-items: left;
+    position:relative;
+    right: 10rem;
   }
 
   .block1__card {
     margin-top: 1rem;
+    justify-content: left;
+    margin-left: 0rem;
   }
 
   .block1__card-img {

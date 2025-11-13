@@ -1,45 +1,64 @@
 .form {
-    background-color: #FFFFC5;
+    background-color: rgba(250, 205, 73, 0.08);
     width: 27rem;
-    height: 51rem;
+    height: 57rem;
+    margin-left: 3rem;
+    display:flex;
+    flex-direction:column;
+    margin-top: 0rem;
 
+  }
 
-}
+   .form__h3 {
 
-.form__h3 {
-    color:#f85e9f;
-    padding: 8rem 3rem 3rem;
-    font-size: 1.4rem;
-    font-style: normal;
+      color:#f85e9f;
+      padding: 8rem 3rem 3rem;
+      font-size: 1.4rem;
+      font-style: normal;
+    }
+
+.container__form {
+    align-items: center;
+    gap: 5rem;
+    outline: none;
+    height: 5rem;
+    margin-left: 1rem;
+    margin-right: 2rem;
+    position: relative;
     
   
+}
+
+.container {
+  display: flex;
+  flex-direction: column; // hace que el form esté arriba y el mapa debajo
+  align-items: center;    // centra horizontalmente los elementos
+  gap: 20rem;              
+}
+
+.container__img {
+  margin-top: 30rem;  
+       
+  img {
+    max-width: 100%;      
+    height: auto;
     
+  }
 }
 
-
-.form__card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 2.7rem;
-    outline: none;
-    border: 0;
-    height: 5rem;
-    margin-left: 4rem;
-    margin-right: 4rem;
  
-}
-
 /*TEXT INSIDE FORM*/
 
 input[type=text] {
   border: none;
-  padding: 1.9rem;
+  padding: 1.3rem;
   border-radius: 3rem;
   font-size: large;
   margin-left: 2rem;
   margin-right: 4rem;
   font-weight: bold;
+  margin: 1rem;
+ 
 
 
 
@@ -53,54 +72,75 @@ input[type=submit] {
   padding: 2rem 4rem;
   border-radius: 2rem;
   margin-bottom: 8rem;
-  margin-left: 4rem;
+  margin-left: 2rem;
+  margin-top: 1rem;
   margin-right: 10.5rem;
-  font-size: 1.4rem;
+  font-size: 1rem;
   font-weight: bold;
 }
 
-.form_map--image{
-    margin: -1.5rem ;
-    margin-bottom: 13.3rem;
+.container__img {
+    margin: 0rem ;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    display:flex;
+    flex-direction: column;
+    float: right;
+    position: relative;
+
  
     
 }
 
+
+  /*-------------------------- Desktop------------------ */
+
 @media screen and (min-width: 1200px) {
-  /* Desktop */
-
-  input[type=text] {
-    width: 49rem ;
-    height: 5.9rem;
-  }
-
 
   .form {
-    background-color: #FFFFC5;
-    width: 55.9rem;
-    height: 51rem;
+    background-color: rgba(250, 205, 73, 0.08);
+    width: 47rem;
+    height: 57rem;
+    margin-left: 3rem;
+    display:flex;
+    flex-direction:column;
+   
+
   }
 
- 
+ .container {
+  display: flex;
+  flex-direction: row; 
+
+
+          
+}
+
+.container__form {
+    align-items: center;
+    gap: 5rem;
+    height: 5rem;
+    margin-left: 1rem;
+    margin-right: 2rem;
+    margin-top: -20rem;
+    
+   
 }
 
 
+.container__img {
+ margin-top: 30rem;  
+  width: 55.9rem;
+  height: 51rem;
+       
+  img {
+    width: auto;
+    height: auto;
 
 
-
-
-@media screen and (max-width: 1200px) {
-  /* Tablet */
+  }
+}
 
 
 }
 
-
-
-@media screen and (min-width: 768px) {
-  /* Tablet */
-
-
-
-
-}

@@ -97,61 +97,50 @@ input[type=submit] {
 
 @media screen and (min-width: 1200px) {
 
-
-  input[type=text] {
-    width: 49rem ;
-    height: 5.9rem;
-  }
-
-
   .form {
     background-color: rgba(250, 205, 73, 0.08);
-    width: 55.9rem;
-    height: 51rem;
-    display:inline-flex;
+    width: 47rem;
+    height: 57rem;
+    margin-left: 3rem;
+    display:flex;
+    flex-direction:column;
+   
+
   }
 
- 
+ .container {
+  display: flex;
+  flex-direction: row; 
+
+
+          
 }
 
-.form__card {
-
-    display: flex;
-    flex-direction: column;
+.container__form {
     align-items: center;
-    gap: 2.7rem;
-    outline: none;
-    border: 0;
+    gap: 5rem;
     height: 5rem;
-    margin-left: 4rem;
-    margin-right: 4rem;
-    position: absolute;
-
+    margin-left: 1rem;
+    margin-right: 2rem;
+    margin-top: -20rem;
     
+   
 }
 
 
+.container__img {
+ margin-top: 30rem;  
+  width: 55.9rem;
+  height: 51rem;
+       
+  img {
+    width: auto;
+    height: auto;
 
-@media screen and (max-width: 780px) {
 
-.container__image {
-  width:27rem;
-  height:24.5rem;
-}
-
-}  
-
-
-/*-------------------------- Tablet ------------------ */
-
-@media (min-width: 768px) and (max-width: 1200px) {
-
-    .container__image{
-  width:27rem;
-  height:24.5rem;
+  }
 }
 
 
 }
-
 

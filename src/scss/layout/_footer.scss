@@ -1,12 +1,11 @@
 @use "../core/variables" as vars;
 
 .footer {
-  
   width: 100vw;
   min-width: 320px;
   height: 11.75rem; /*188px11.75rem*/
   margin-left: 2rem;
-  margin-top: 40rem;
+  margin-top: 4rem;
 
   &__title {
     display: inline-flex;
@@ -114,4 +113,3 @@
     }
   }
 }
-
